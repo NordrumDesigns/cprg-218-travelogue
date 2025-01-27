@@ -1,0 +1,20 @@
+* {box-sizing: border-box;}
+
+nav button {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    text-decoration: underline;
+}
+.active {
+    color: #293732;
+    font-weight: bold;
+}
+
+section {
+    display: none;
+}
