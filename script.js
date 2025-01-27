@@ -16,3 +16,6 @@ function openCity(evt, cityName) {
 }
 
 document.getElementById("defaultOpen").click();
+
+// Footer copyright
+document.getElementById("fYear").innerHTML = new Date().getFullYear();
