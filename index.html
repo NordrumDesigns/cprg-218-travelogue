@@ -4,27 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chris' Travelogue: Miata Edition</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
         <h1>Chris' Travelogue:<br><span>Miata</span> Edition</h1>
         <p>The best places to park your car:</p>
         <nav>
-            <button>Wave Mural, Airdrie</button>
-            <button>Top Gear Car Wash</button>
-            <button>My Driveway</button>
+            <button class="tablinks" onclick="openCity(event, 'Wave')" id="defaultOpen">Wave Mural, Airdrie</button>
+            <button class="tablinks" onclick="openCity(event, 'TopGear')">Top Gear Car Wash</button>
+            <button class="tablinks" onclick="openCity(event, 'Driveway')">My Driveway</button>
         </nav>
     </header>
     <main>
-        <section id="Wave">
+        <section id="Wave" class="tabcontent">
             <h2>Wave Mural, Airdrie</h2>
             <p></p>
         </section>
-        <section id="TopGear">
+        <section id="TopGear" class="tabcontent">
             <h2>Top Gear Car Wash</h2>
             <p></p>
         </section>
-        <section id="Driveway">
+        <section id="Driveway" class="tabcontent">
             <h2>My Driveway</h2>
             <p></p>
         </section>
