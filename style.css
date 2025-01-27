@@ -1,9 +1,20 @@
 * {box-sizing: border-box;}
 
+body {
+    text-align: center;
+}
+
+nav {
+    border-radius: 25px;
+    background-color: #293732;
+}
+
 nav button {
     background-color: inherit;
+    color: white;
     border: none;
     cursor: pointer;
+    padding: 12px 14px;
     transition: 0.3s;
 }
 
@@ -11,10 +22,25 @@ button:hover {
     text-decoration: underline;
 }
 .active {
-    color: #293732;
     font-weight: bold;
 }
 
 section {
     display: none;
+    animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+footer {
+    padding: 25px;
+}
+
+footer a {
+    color: inherit;
+    font-style: normal;
+    text-decoration: none;
 }
