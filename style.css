@@ -5,10 +5,24 @@
 }
 
 body {
+    padding: 25px;
     text-align: center;
 }
 
+h1 {
+    font-family: 'Race Sport';
+    font-size: x-large;
+    padding-bottom: 10px;
+}
+
+#miata {
+    font-family: 'Miata';
+    font-size: 2.5rem;
+    color: #22883c;
+}
+
 menu button {
+    font-family: 'Race Sport';
     background-color: inherit;
     border: none;
     cursor: pointer;
@@ -17,11 +31,12 @@ menu button {
 }
 
 button:hover {
-    text-decoration: underline;
+    transform: scale(1.1);
 }
 
 .active {
-    font-weight: bold;
+    color: #22883c;
+    text-shadow: 3px 3px 3px #ccc;
 }
 
 main {
@@ -34,8 +49,8 @@ section {
     display: none;
     animation: fadeEffect 1s;
     background-color: transparent;
-    width: 400px;
-    height: 250px;
+    width: 740px;
+    height: 498px;
     perspective: 1000px;
 }
   
@@ -49,7 +64,7 @@ figure {
     transform-style: preserve-3d;
 }
   
-section:hover figure {
+section:hover > figure {
     transform: rotateY(180deg);
     cursor: pointer;
 }
@@ -69,16 +84,40 @@ section:hover figure {
   
 figcaption {
     background-color: #eae7e6;
+    text-align: left;
     transform: rotateY(180deg);
+}
+
+figcaption h2 {
+    font-family: 'MedievalSharp';
+    position: absolute;
+    left: 25px;
+    top: 100px;
+}
+
+figcaption ul {
+    font-family: 'MedievalSharp';
+    list-style: none;
+    position: absolute;
+    right: 40px;
+    top: 185px;
+}
+
+li {
+    margin-bottom: 25px;
+}
+
+figcaption p {
+    font-family: 'Homemade Apple';
+    max-width: 50%;
+    position: absolute;
+    left: 35px;
+    top: 140px;
 }
 
 @keyframes fadeEffect {
     from {opacity: 0;}
     to {opacity: 1;}
-}
-
-footer {
-    padding-bottom: 25px;
 }
 
 footer a {

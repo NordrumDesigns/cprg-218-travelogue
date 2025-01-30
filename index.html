@@ -6,45 +6,54 @@
     <title>Chris' Travelogue: Miata Edition</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=MedievalSharp&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Chris' Travelogue:<br><span>Miata</span> Edition</h1>
-        <p>The best places to park your car:</p>
+        <h1>Travelogue: <span id="miata">Miata</span> Edition</h1>
         <menu>
-            <button class="tablinks" onclick="openTab(event, 'Wave')" id="defaultOpen">Wave Mural</button>
+            <button class="tablinks" onclick="openTab(event, 'Wave')" id="defaultOpen">Miller Mural</button>
             <button class="tablinks" onclick="openTab(event, 'TopGear')">Top Gear Car Wash</button>
             <button class="tablinks" onclick="openTab(event, 'CarShows')">Car Shows</button>
         </menu>
-        <hr>
     </header>
     <main>
         <section id="Wave" class="tabcontent">
             <figure>
                 <div class="pic">
-                    <img src="images/IMG_1163_Original.JPG" alt="Avatar" style="width:400px;height:250px;">
+                    <img src="images/miata_mural.jpg" alt="Avatar" style="width:740px;height:498px;">
                 </div>
                 <figcaption>
-                    <h2>Wave Mural</h2>
-                    <p></p>
+                    <h2>Miller Mural</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <ul>
+                        <li><strong>Address:</strong> 1 Ave NW, Airdrie, AB</li>
+                        <li><strong>Camera:</strong> Nikon D50</li>
+                    </ul>
                 </figcaption>
             </figure>
         </section>
         <section id="TopGear" class="tabcontent">
             <figure>
                 <div class="pic">
-                    <img src="images/IMG_2326_Original.JPG" alt="Avatar" style="width:400px;height:250px;">
+                    <img src="images/miata_topgear.jpg" alt="Avatar" style="width:740px;height:498px;">
                 </div>
                 <figcaption>
                     <h2>Top Gear Car Wash</h2>
                     <p></p>
+                    <ul>
+                        <li><strong>Address:</strong> 1796 120 Ave NE, Calgary, AB</li>
+                        <li><strong>Camera:</strong> iPhone 13 Mini</li>
+                    </ul>
                 </figcaption>
             </figure>
         </section>
         <section id="CarShows" class="tabcontent">
             <figure>
                 <div class="pic">
-                    <img src="images/IMG_2145_Original.JPG" alt="Avatar" style="width:400px;height:250px;">
+                    <img src="images/IMG_2145_Original.JPG" alt="Avatar" style="width:740px;height:498px;">
                 </div>
                 <figcaption>
                     <h2>Car Shows</h2>
@@ -54,7 +63,6 @@
         </section>
     </main>
     <footer>
-        <hr>
         <small>&copy; <span id="fYear">2025</span> by Chris Nordrum.</small>
         <address><a href="">Follow me on GitHub</a></address>
     </footer>
