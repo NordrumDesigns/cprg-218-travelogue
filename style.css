@@ -21,7 +21,7 @@ h1 {
     color: #22883c;
 }
 
-menu button {
+nav button {
     font-family: 'Race Sport';
     background-color: inherit;
     border: none;
@@ -96,7 +96,7 @@ figcaption h2 {
 }
 
 figcaption ul {
-    font-family: 'MedievalSharp';
+    font-family: 'MedievalSharp', serif;
     list-style: none;
     position: absolute;
     right: 40px;
@@ -108,7 +108,7 @@ li {
 }
 
 figcaption p {
-    font-family: 'Homemade Apple';
+    font-family: 'Homemade Apple', cursive;
     max-width: 50%;
     position: absolute;
     left: 35px;
