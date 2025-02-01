@@ -31,7 +31,16 @@ h1 {
     color: #22883c;
 }
 
-nav button {
+menu {
+    display: flex;
+    justify-content: center;
+}
+
+menu li {
+    list-style: none;
+}
+
+menu button {
     font-family: 'Race Sport';
     background-color: inherit;
     border: none;
