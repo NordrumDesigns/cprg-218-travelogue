@@ -67,13 +67,12 @@ main {
 section {
     display: none;
     animation: fadeEffect 1s;
-    background-color: transparent;
     width: 740px;
     height: 498px;
     perspective: 1000px;
 }
   
-figure {
+article {
     position: relative;
     width: 100%;
     height: 100%;
@@ -83,12 +82,12 @@ figure {
     transform-style: preserve-3d;
 }
   
-section:hover > figure {
+section:hover > article {
     transform: rotateY(180deg);
     cursor: pointer;
 }
   
-.pic, figcaption {
+.card-front, .card-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -96,25 +95,25 @@ section:hover > figure {
     backface-visibility: hidden;
 }
   
-.pic {
+.card-front {
     background-color: #bbb;
     color: black;
 }
   
-figcaption {
+.card-back {
     background-color: #eae7e6;
     text-align: left;
     transform: rotateY(180deg);
 }
 
-figcaption h2 {
+.card-back h2 {
     font-family: 'MedievalSharp';
     position: absolute;
     left: 25px;
     top: 100px;
 }
 
-figcaption ul {
+.card-back ul {
     font-family: 'MedievalSharp', serif;
     list-style: none;
     position: absolute;
@@ -126,7 +125,7 @@ li {
     margin-bottom: 25px;
 }
 
-figcaption p {
+.card-back p {
     font-family: 'Homemade Apple', cursive;
     max-width: 50%;
     position: absolute;
